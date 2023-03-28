@@ -41,15 +41,15 @@ echo "WantedBy=multi-user.target" | tee -a /etc/systemd/system/xmrig.service
 
 echo "STARTING XMRIG/SERVICES"
 
-service logrotate start
-service ntp start
-service xmrig start
+sudo service logrotate start
+sudo service ntp start
+sudo service xmrig start
 
 echo "STARTING XMRIG/SERVICES @ BOOT"
 
-systemctl enable logrotate
-systemctl enable ntp
-systemctl enable xmrig
+sudo systemctl enable logrotate
+sudo systemctl enable ntp
+sudo systemctl enable xmrig
 
 echo "${_CYAN}MINING RUNNING${_RESET}"
 echo "${_YELLOW}  The process is running in a screen session."
