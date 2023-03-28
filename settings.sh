@@ -95,7 +95,7 @@ _XMRIG_CLONE="xmrig-cpu"
 _XMRIG_CLONE_LOCATION="$_WORK_DIR/$_XMRIG_CLONE"
 
 # Set branch from which to build
-_XMRIG_BRANCH="beta"
+_XMRIG_BRANCH="master"
 
 # Set build directory
 _XMRIG_BUILD="build"
