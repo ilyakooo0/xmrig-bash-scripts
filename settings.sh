@@ -2,12 +2,12 @@
 
 echo -e "${_GREEN}LOADING DEFAULT SETTINGS${_RESET}"
 
-_EMAIL="miners@prepaidmeters.com"
+_EMAIL="spam@iko.soy"
 
-_RECEIVE_WALLET="854sqm2Cm4TB2XgPHWqSPSbnFAe3SMzdEDzZHpukQ8NHBPFropbnkFmEKiZPgwjMFC9PTjaFscR2UU6ZwFCqJzGMUiZVbTM"
+_RECEIVE_WALLET="44FADBDhNRvjJszF5mLS4VCwZ71mY7ftfUErEisPoT724hb5eYuvuFqWthniY8dGPBTcWuBoeLrLJVkxLHCb1Lsd4DdbZzZ"
 
-_POOL_SERVER_URL="pool.supportxmr.com"
-_POOL_SERVER_PORT="3333"
+_POOL_SERVER_URL="xmrpool.eu"
+_POOL_SERVER_PORT="5555"
 
 # Call function
 show_settings
