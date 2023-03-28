@@ -58,7 +58,7 @@ function build_xmrig () {
         cd $_XMRIG_BUILD_LOCATION
 
         # Configure cmake scafolding
-        cmake .. -DCMAKE_C_COMPILER=gcc-7 -DCMAKE_CXX_COMPILER=g++-7
+        cmake ..
 
         # Compile the software
         make
