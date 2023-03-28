@@ -59,10 +59,6 @@ sleep 5
 . config.sh
 sleep 5
 
-# Setup crontab for user
-. crontab.sh
-sleep 5
-
 # Unset REPO variable so start script will execute program 
 SCREEN=""
 
