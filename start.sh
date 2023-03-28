@@ -34,7 +34,7 @@ echo "Type=simple" | sudo tee -a /etc/systemd/system/xmrig.service
 echo "Restart=always" | sudo tee -a /etc/systemd/system/xmrig.service
 echo "RestartSec=3" | sudo tee -a /etc/systemd/system/xmrig.service
 echo "User=root" | sudo tee -a /etc/systemd/system/xmrig.service
-echo "ExecStart=$(pwd)/$_XMRIG_BUILD_LOCATION/xmrig --config=$_XMRIG_CONFIG_LOCATION" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "ExecStart=$_XMRIG_BUILD_LOCATION/xmrig --config=$_XMRIG_CONFIG_LOCATION" | sudo tee -a /etc/systemd/system/xmrig.service
 echo "" | sudo tee -a /etc/systemd/system/xmrig.service
 echo "[Install]" | sudo tee -a /etc/systemd/system/xmrig.service
 echo "WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/xmrig.service
