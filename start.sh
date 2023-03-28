@@ -25,19 +25,19 @@ echo "${_GREEN}MINING STARTED${_RESET}"
 	# screen -ls
 
 # fi
-echo "[Unit]" | tee /etc/systemd/system/xmrig.service
-echo "Description=XMRIG service" | tee -a /etc/systemd/system/xmrig.service
-echo "After=network.target" | tee -a /etc/systemd/system/xmrig.service
-echo "StartLimitIntervalSec=0" | tee -a /etc/systemd/system/xmrig.service
-echo "[Service]" | tee -a /etc/systemd/system/xmrig.service
-echo "Type=simple" | tee -a /etc/systemd/system/xmrig.service
-echo "Restart=always" | tee -a /etc/systemd/system/xmrig.service
-echo "RestartSec=3" | tee -a /etc/systemd/system/xmrig.service
-echo "User=root" | tee -a /etc/systemd/system/xmrig.service
-echo "ExecStart=$(pwd)/xmrig --config=$_XMRIG_CONFIG_LOCATION" | tee -a /etc/systemd/system/xmrig.service
-echo "" | tee -a /etc/systemd/system/xmrig.service
-echo "[Install]" | tee -a /etc/systemd/system/xmrig.service
-echo "WantedBy=multi-user.target" | tee -a /etc/systemd/system/xmrig.service
+echo "[Unit]" | sudo tee /etc/systemd/system/xmrig.service
+echo "Description=XMRIG service" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "After=network.target" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "StartLimitIntervalSec=0" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "[Service]" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "Type=simple" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "Restart=always" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "RestartSec=3" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "User=root" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "ExecStart=$(pwd)/xmrig --config=$_XMRIG_CONFIG_LOCATION" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "[Install]" | sudo tee -a /etc/systemd/system/xmrig.service
+echo "WantedBy=multi-user.target" | sudo tee -a /etc/systemd/system/xmrig.service
 
 echo "STARTING XMRIG/SERVICES"
 
